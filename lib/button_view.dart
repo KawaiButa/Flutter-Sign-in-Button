@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_signin_button/button_builder.dart';
 import 'package:flutter_signin_button/button_list.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class SignInButton extends StatelessWidget {
   /// Here are the buttons builder which integrate with button builder
@@ -100,7 +101,6 @@ class SignInButton extends StatelessWidget {
           key: const ValueKey('Facebook'),
           mini: mini,
           text: text ?? 'Sign in with Facebook',
-          icon: Icons.facebook,
           image: button == Buttons.FacebookNew
               ? const ClipRRect(
                   child: Image(
@@ -111,7 +111,11 @@ class SignInButton extends StatelessWidget {
                     height: 24.0,
                   ),
                 )
-              : null,
+              : SvgPicture.network(
+                  'https://cdn.simpleicons.org/facebook/white',
+                  width: 20.0,
+                  height: 20.0,
+                ),
           backgroundColor: button == Buttons.FacebookNew
               ? const Color(0xFF1877f2)
               : const Color(0xFF3B5998),
@@ -129,7 +133,11 @@ class SignInButton extends StatelessWidget {
           key: const ValueKey('GitHub'),
           mini: mini,
           text: text ?? 'Sign in with GitHub',
-          icon: Icons.github,
+          image: SvgPicture.network(
+            'https://cdn.simpleicons.org/github/white',
+            width: 20.0,
+            height: 20.0,
+          ),
           backgroundColor: const Color(0xFF444444),
           onPressed: onPressed,
           padding: padding,
@@ -144,8 +152,13 @@ class SignInButton extends StatelessWidget {
           mini: mini,
           text: text ?? 'Sign in with Apple',
           textColor: button == Buttons.Apple ? Colors.black : Colors.white,
-          icon: Icons.apple,
-          iconColor: button == Buttons.Apple ? Colors.black : Colors.white,
+          image: SvgPicture.network(
+            button == Buttons.Apple
+                ? 'https://cdn.simpleicons.org/apple/black'
+                : 'https://cdn.simpleicons.org/apple/white',
+            width: 20.0,
+            height: 20.0,
+          ),
           backgroundColor: button == Buttons.Apple
               ? const Color(0xFFFFFFFF)
               : const Color(0xFF000000),
@@ -160,7 +173,11 @@ class SignInButton extends StatelessWidget {
           key: const ValueKey('LinkedIn'),
           mini: mini,
           text: text ?? 'Sign in with LinkedIn',
-          icon: Icons.linkedin,
+          image: SvgPicture.network(
+            'https://cdn.simpleicons.org/linkedin/white',
+            width: 20.0,
+            height: 20.0,
+          ),
           backgroundColor: const Color(0xFF007BB6),
           onPressed: onPressed,
           padding: padding,
@@ -173,7 +190,11 @@ class SignInButton extends StatelessWidget {
           key: const ValueKey('Pinterest'),
           mini: mini,
           text: text ?? 'Sign in with Pinterest',
-          icon: Icons.pinterest,
+          image: SvgPicture.network(
+            'https://cdn.simpleicons.org/pinterest/white',
+            width: 20.0,
+            height: 20.0,
+          ),
           backgroundColor: const Color(0xFFCB2027),
           onPressed: onPressed,
           padding: padding,
@@ -186,7 +207,11 @@ class SignInButton extends StatelessWidget {
           key: const ValueKey('Tumblr'),
           mini: mini,
           text: text ?? 'Sign in with Tumblr',
-          icon: Icons.tumblr,
+          image: SvgPicture.network(
+            'https://cdn.simpleicons.org/tumblr/white',
+            width: 20.0,
+            height: 20.0,
+          ),
           backgroundColor: const Color(0xFF34526f),
           onPressed: onPressed,
           padding: padding,
@@ -199,7 +224,11 @@ class SignInButton extends StatelessWidget {
           key: const ValueKey('Twitter'),
           mini: mini,
           text: text ?? 'Sign in with Twitter',
-          icon: Icons.twitter,
+          image: SvgPicture.network(
+            'https://cdn.simpleicons.org/twitter/white',
+            width: 20.0,
+            height: 20.0,
+          ),
           backgroundColor: const Color(0xFF1DA1F2),
           onPressed: onPressed,
           padding: padding,
@@ -212,7 +241,11 @@ class SignInButton extends StatelessWidget {
           key: const ValueKey('Reddit'),
           mini: mini,
           text: text ?? 'Sign in with Reddit',
-          icon: Icons.reddit,
+          image: SvgPicture.network(
+            'https://cdn.simpleicons.org/reddit/white',
+            width: 20.0,
+            height: 20.0,
+          ),
           backgroundColor: const Color(0xFFFF4500),
           onPressed: onPressed,
           padding: padding,
@@ -224,7 +257,11 @@ class SignInButton extends StatelessWidget {
           key: const ValueKey('Quora'),
           mini: mini,
           text: text ?? 'Sign in with Quora',
-          icon: Icons.quora,
+          image: SvgPicture.network(
+            'https://cdn.simpleicons.org/quora/white',
+            width: 20.0,
+            height: 20.0,
+          ),
           backgroundColor: const Color(0x00a40a00),
           onPressed: onPressed,
           padding: padding,
@@ -236,7 +273,11 @@ class SignInButton extends StatelessWidget {
           key: const ValueKey('Yahoo'),
           mini: mini,
           text: text ?? 'Sign in with Yahoo',
-          icon: Icons.yahoo,
+          image: SvgPicture.network(
+            'https://cdn.simpleicons.org/yahoo/white',
+            width: 20.0,
+            height: 20.0,
+          ),
           backgroundColor: const Color(0x006001d2),
           onPressed: onPressed,
           padding: padding,
@@ -248,7 +289,11 @@ class SignInButton extends StatelessWidget {
           key: const ValueKey('Hotmail'),
           mini: mini,
           text: text ?? 'Sign in with Hotmail',
-          icon: Icons.commentSms,
+          image: SvgPicture.network(
+            'https://cdn.simpleicons.org/microsoft/white',
+            width: 20.0,
+            height: 20.0,
+          ),
           backgroundColor: const Color(0x000072c6),
           onPressed: onPressed,
           padding: padding,
@@ -260,7 +305,11 @@ class SignInButton extends StatelessWidget {
           key: const ValueKey('Xbox'),
           mini: mini,
           text: text ?? 'Sign in with Xbox',
-          icon: Icons.xbox,
+          image: SvgPicture.network(
+            'https://cdn.simpleicons.org/xbox/white',
+            width: 20.0,
+            height: 20.0,
+          ),
           backgroundColor: const Color(0x00107c0f),
           onPressed: onPressed,
           padding: padding,
@@ -272,7 +321,11 @@ class SignInButton extends StatelessWidget {
           key: const ValueKey('Microsoft'),
           mini: mini,
           text: text ?? 'Sign in with Microsoft',
-          icon: Icons.microsoft,
+          image: SvgPicture.network(
+            'https://cdn.simpleicons.org/microsoft/white',
+            width: 20.0,
+            height: 20.0,
+          ),
           backgroundColor: const Color(0xff235A9F),
           onPressed: onPressed,
           padding: padding,
@@ -286,7 +339,11 @@ class SignInButton extends StatelessWidget {
           key: const ValueKey('Email'),
           mini: mini,
           text: text ?? 'Sign in with Email',
-          icon: Icons.email,
+          image: SvgPicture.network(
+            'https://cdn.simpleicons.org/minutemailer/white',
+            width: 20.0,
+            height: 20.0,
+          ),
           onPressed: onPressed,
           padding: padding,
           backgroundColor: Colors.grey[700]!,
