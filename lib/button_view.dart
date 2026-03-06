@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_signin_button/button_builder.dart';
 import 'package:flutter_signin_button/button_list.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class SignInButton extends StatelessWidget {
   /// Here are the buttons builder which integrate with button builder
@@ -101,7 +100,7 @@ class SignInButton extends StatelessWidget {
           key: const ValueKey('Facebook'),
           mini: mini,
           text: text ?? 'Sign in with Facebook',
-          icon: FontAwesomeIcons.facebookF,
+          icon: Icons.facebook,
           image: button == Buttons.FacebookNew
               ? const ClipRRect(
                   child: Image(
@@ -130,7 +129,7 @@ class SignInButton extends StatelessWidget {
           key: const ValueKey('GitHub'),
           mini: mini,
           text: text ?? 'Sign in with GitHub',
-          icon: FontAwesomeIcons.github,
+          icon: Icons.github,
           backgroundColor: const Color(0xFF444444),
           onPressed: onPressed,
           padding: padding,
@@ -145,7 +144,7 @@ class SignInButton extends StatelessWidget {
           mini: mini,
           text: text ?? 'Sign in with Apple',
           textColor: button == Buttons.Apple ? Colors.black : Colors.white,
-          icon: FontAwesomeIcons.apple,
+          icon: Icons.apple,
           iconColor: button == Buttons.Apple ? Colors.black : Colors.white,
           backgroundColor: button == Buttons.Apple
               ? const Color(0xFFFFFFFF)
@@ -161,7 +160,7 @@ class SignInButton extends StatelessWidget {
           key: const ValueKey('LinkedIn'),
           mini: mini,
           text: text ?? 'Sign in with LinkedIn',
-          icon: FontAwesomeIcons.linkedinIn,
+          icon: Icons.linkedin,
           backgroundColor: const Color(0xFF007BB6),
           onPressed: onPressed,
           padding: padding,
@@ -174,7 +173,7 @@ class SignInButton extends StatelessWidget {
           key: const ValueKey('Pinterest'),
           mini: mini,
           text: text ?? 'Sign in with Pinterest',
-          icon: FontAwesomeIcons.pinterest,
+          icon: Icons.pinterest,
           backgroundColor: const Color(0xFFCB2027),
           onPressed: onPressed,
           padding: padding,
@@ -187,7 +186,7 @@ class SignInButton extends StatelessWidget {
           key: const ValueKey('Tumblr'),
           mini: mini,
           text: text ?? 'Sign in with Tumblr',
-          icon: FontAwesomeIcons.tumblr,
+          icon: Icons.tumblr,
           backgroundColor: const Color(0xFF34526f),
           onPressed: onPressed,
           padding: padding,
@@ -200,7 +199,7 @@ class SignInButton extends StatelessWidget {
           key: const ValueKey('Twitter'),
           mini: mini,
           text: text ?? 'Sign in with Twitter',
-          icon: FontAwesomeIcons.twitter,
+          icon: Icons.twitter,
           backgroundColor: const Color(0xFF1DA1F2),
           onPressed: onPressed,
           padding: padding,
@@ -213,7 +212,7 @@ class SignInButton extends StatelessWidget {
           key: const ValueKey('Reddit'),
           mini: mini,
           text: text ?? 'Sign in with Reddit',
-          icon: FontAwesomeIcons.reddit,
+          icon: Icons.reddit,
           backgroundColor: const Color(0xFFFF4500),
           onPressed: onPressed,
           padding: padding,
@@ -225,7 +224,7 @@ class SignInButton extends StatelessWidget {
           key: const ValueKey('Quora'),
           mini: mini,
           text: text ?? 'Sign in with Quora',
-          icon: FontAwesomeIcons.quora,
+          icon: Icons.quora,
           backgroundColor: const Color(0x00a40a00),
           onPressed: onPressed,
           padding: padding,
@@ -237,7 +236,7 @@ class SignInButton extends StatelessWidget {
           key: const ValueKey('Yahoo'),
           mini: mini,
           text: text ?? 'Sign in with Yahoo',
-          icon: FontAwesomeIcons.yahoo,
+          icon: Icons.yahoo,
           backgroundColor: const Color(0x006001d2),
           onPressed: onPressed,
           padding: padding,
@@ -249,7 +248,7 @@ class SignInButton extends StatelessWidget {
           key: const ValueKey('Hotmail'),
           mini: mini,
           text: text ?? 'Sign in with Hotmail',
-          icon: FontAwesomeIcons.commentSms,
+          icon: Icons.commentSms,
           backgroundColor: const Color(0x000072c6),
           onPressed: onPressed,
           padding: padding,
@@ -261,7 +260,7 @@ class SignInButton extends StatelessWidget {
           key: const ValueKey('Xbox'),
           mini: mini,
           text: text ?? 'Sign in with Xbox',
-          icon: FontAwesomeIcons.xbox,
+          icon: Icons.xbox,
           backgroundColor: const Color(0x00107c0f),
           onPressed: onPressed,
           padding: padding,
@@ -273,7 +272,7 @@ class SignInButton extends StatelessWidget {
           key: const ValueKey('Microsoft'),
           mini: mini,
           text: text ?? 'Sign in with Microsoft',
-          icon: FontAwesomeIcons.microsoft,
+          icon: Icons.microsoft,
           backgroundColor: const Color(0xff235A9F),
           onPressed: onPressed,
           padding: padding,
